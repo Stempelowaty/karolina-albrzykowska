@@ -4,7 +4,7 @@ import { Navigation } from "@/app/_components/navigation";
 export default async function Contact({
   params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
   return (

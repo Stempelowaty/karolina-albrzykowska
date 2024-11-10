@@ -2,7 +2,11 @@ import Image from "next/image";
 import { Navigation } from "../_components/navigation";
 import { Top } from "../_components/top";
 
-export default async function Home({ params }: { params: { lang: string } }) {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
   const { lang } = await params;
   return (
     <div className="w-full h-full">
