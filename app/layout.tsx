@@ -11,7 +11,7 @@ const lexend = Lexend({
 export const metadata: Metadata = {
   title: "Karolina Albrzykowska",
   description: "My portfolio!",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "svg", url: "/logo.svg" }],
 };
 
 export default function RootLayout({
