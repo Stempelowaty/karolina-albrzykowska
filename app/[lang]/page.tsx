@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { Logo } from "./_components/logo";
-import { Navigation } from "./_components/navigation";
+import { Navigation } from "../_components/navigation";
+import { Top } from "../_components/top";
 
-export default function Home() {
+export default async function Home({ params }: { params: { lang: string } }) {
+  const { lang } = await params;
   return (
     <div className="w-full h-full">
-      <Logo />
-      <Navigation />
+      <Top lang={lang} />
+      <Navigation lang={lang} />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           src={"/banner.JPG"}
@@ -15,7 +16,7 @@ export default function Home() {
           height={1100}
           className="w-full h-64 object-cover bg-fixed"
         />
-        <div className="h-96">text</div>
+        <div className="h-96">{lang}</div>
         <div className="h-96">text</div>
         <div className="h-96">text</div>
         <div className="h-96">text</div>

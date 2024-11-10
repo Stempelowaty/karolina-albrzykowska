@@ -3,8 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { cn } from "../utils";
 import { HomeIcon, PaletteIcon, BookOpenIcon, PhoneIcon } from "lucide-react";
-
-export const Navigation = () => {
+interface NavigationProps {
+  lang: string;
+}
+export const Navigation = (props: NavigationProps) => {
+  const { lang } = props;
   const [isPortfolioOpen, setPortfolioOpen] = useState(false);
 
   return (
@@ -13,7 +16,7 @@ export const Navigation = () => {
         Karolina Albrzykowska
       </p>
       <nav className="flex flex-row items-center gap-4 px-4 w-full justify-end">
-        <Link aria-label="home" href={"/"}>
+        <Link aria-label="home" href={`/${lang}/`}>
           <div
             className={cn(
               "rounded-lg p-2 uppercase transition duration-300 group"
@@ -31,7 +34,7 @@ export const Navigation = () => {
           onMouseEnter={() => setPortfolioOpen(true)}
           onMouseLeave={() => setPortfolioOpen(false)}
         >
-          <Link aria-label="home" href={"/"}>
+          <Link aria-label="home" href={`/${lang}/portfolio`}>
             <div
               className={cn(
                 "rounded-lg p-2 uppercase transition duration-300 group"
@@ -46,7 +49,7 @@ export const Navigation = () => {
           </Link>
           {isPortfolioOpen && (
             <div className="absolute top-full w-48 bg-foreground text-background rounded-sm shadow-lg flex flex-col">
-              <Link aria-label="home" href={"/"}>
+              <Link aria-label="home" href={`/${lang}/portfolio`}>
                 <p
                   className={cn(
                     "rounded-lg p-2 uppercase transition duration-300 group"
@@ -56,7 +59,7 @@ export const Navigation = () => {
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
-              <Link aria-label="home" href={"/"}>
+              <Link aria-label="home" href={`/${lang}/portfolio`}>
                 <p
                   className={cn(
                     "rounded-lg p-2 uppercase transition duration-300 group"
@@ -66,7 +69,7 @@ export const Navigation = () => {
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
-              <Link aria-label="home" href={"/"}>
+              <Link aria-label="home" href={`/${lang}/portfolio`}>
                 <p
                   className={cn(
                     "rounded-lg p-2 uppercase transition duration-300 group"
@@ -79,7 +82,7 @@ export const Navigation = () => {
             </div>
           )}
         </div>
-        <Link aria-label="home" href={"/"}>
+        <Link aria-label="bio" href={`/${lang}/bio`}>
           <div
             className={cn(
               "rounded-lg p-2 uppercase transition duration-300 group"
@@ -92,7 +95,7 @@ export const Navigation = () => {
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
           </div>
         </Link>
-        <Link aria-label="home" href={"/"}>
+        <Link aria-label="contact" href={`/${lang}/contact`}>
           <div
             className={cn(
               "rounded-lg p-2 uppercase transition duration-300 group"
