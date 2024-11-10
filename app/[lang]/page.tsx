@@ -20,58 +20,64 @@ export default async function Home({
           height={1100}
           className="w-full h-64 object-cover bg-fixed"
         />
-        <div className="h-96">{lang}</div>
-        <div className="h-96">text</div>
-        <div className="h-96">text</div>
-        <div className="h-96">text</div>
+        <div className="flex w-full flex-wrap justify-center">
+          <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
+            <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">
+              <Image
+                src={"/Test_Image.png"}
+                alt={""}
+                width={960}
+                height={960}
+                className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500"
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
+            <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">
+              <Image
+                src={"/Test_Image.png"}
+                alt={""}
+                width={960}
+                height={960}
+                className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500"
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
+            <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">
+              <Image
+                src={"/Test_Image.png"}
+                alt={""}
+                width={960}
+                height={960}
+                className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500"
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
+            <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">
+              <Image
+                src={"/Test_Image.png"}
+                alt={""}
+                width={960}
+                height={960}
+                className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500"
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
+            <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">
+              <Image
+                src={"/Test_Image.png"}
+                alt={""}
+                width={960}
+                height={960}
+                className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500"
+              />
+            </div>
+          </div>
+        </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
