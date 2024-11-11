@@ -49,13 +49,13 @@ export const Navigation = (props: NavigationProps) => {
           </Link>
           {isPortfolioOpen && (
             <div className="absolute top-full w-48 bg-foreground text-background rounded-sm shadow-lg flex flex-col">
-              <Link aria-label="home" href={`/${lang}/portfolio`}>
+              <Link aria-label="home" href={`/${lang}/digital`}>
                 <p
                   className={cn(
                     "rounded-lg p-2 uppercase transition duration-300 group"
                   )}
                 >
-                  Sztuka 1
+                  Digital
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
