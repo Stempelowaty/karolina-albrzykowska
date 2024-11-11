@@ -30,24 +30,24 @@ export const TwoDimensional = () => {
         2d
       </p>
       <div className="grid mt-12 gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4">
-        <div className="grid gap-4">
+        <div className="flex flex-col gap-4 items-start">
           {firstCol?.map((src) => (
             <div key={src?.src}>
-              <Image src={src} alt={`1${src}`} className="rounded-lg" />
+              <Image src={src} alt={src?.src} className="rounded-lg" />
             </div>
           ))}
         </div>
-        <div className="grid gap-4">
+        <div className="flex flex-col gap-4 items-start">
           {secondCol?.map((src) => (
             <div key={src?.src}>
-              <Image src={src} alt={`2${src}`} className="rounded-lg" />
+              <Image src={src} alt={src?.src} className="rounded-lg" />
             </div>
           ))}
         </div>
-        <div className="grid gap-4">
+        <div className="flex flex-col gap-4 items-start">
           {thirdCol?.map((src) => (
             <div key={src?.src}>
-              <Image src={src} alt={`3${src}`} className="rounded-lg" />
+              <Image src={src} alt={src?.src} className="rounded-lg" />
             </div>
           ))}
         </div>
