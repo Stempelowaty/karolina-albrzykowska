@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import p1 from "@/public/2d/1.jpg";
 import p2 from "@/public/2d/2.jpg";
@@ -24,6 +23,7 @@ export const TwoDimensional = () => {
   const firstCol = [p1, p2, p3, p4, p5];
   const secondCol = [p6, p7, p8, p9, p10, p11, p12];
   const thirdCol = [p13, p14, p15, p16, p17, p18, p19];
+  //static imports, dynamic is possible but takes 4x as much code
   return (
     <div>
       <p className="w-full flex justify-end bg-foreground text-background uppercase text-6xl px-12">

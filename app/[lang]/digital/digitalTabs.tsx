@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { TwoDimensional } from "./twoDimentional";
+import { ThreeDimentional } from "./threeDimentional";
 
 export const DigitalTabs = () => {
   const [tab, setTab] = useState<string>("");
@@ -41,13 +42,7 @@ export const DigitalTabs = () => {
         </div>
       </div>
       {tab == "2d" && <TwoDimensional />}
-      {tab == "3d" && (
-        <div>
-          <p className="w-full flex justify-end bg-foreground text-background uppercase text-6xl px-12">
-            3d
-          </p>
-        </div>
-      )}
+      {tab == "3d" && <ThreeDimentional />}
     </div>
   );
 };
