@@ -29,7 +29,7 @@ export const TwoDimensional = () => {
       <p className="w-full flex justify-end bg-foreground text-background uppercase text-6xl px-12">
         2d
       </p>
-      <div className="grid mt-12 gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4">
+      <div className="grid mt-12 gap-4 grid-cols-1 sm:grid-cols-3 p-4">
         <div className="flex flex-col gap-4 items-start">
           {firstCol?.map((src) => (
             <div key={src?.src}>

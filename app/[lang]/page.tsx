@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Navigation } from "../_components/navigation";
 import { Top } from "../_components/top";
+import Link from "next/link";
 
 export default async function Home({
   params,
@@ -21,38 +22,56 @@ export default async function Home({
           className="w-full h-64 object-cover bg-fixed"
         />
         <div className="flex w-full flex-wrap justify-center">
-          <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
-            <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">
-              <Image
-                src={"/Test_Image.png"}
-                alt={""}
-                width={960}
-                height={960}
-                className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500"
-              />
-            </div>
+          <div className="w-full md:w-1/3 aspect-square flex ">
+            <Link
+              href={`/${lang}/digital`}
+              className="flex items-center justify-center w-full h-full"
+            >
+              <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600 relative flex items-center justify-center">
+                <Image
+                  src={"/Test_Image.png"}
+                  alt={""}
+                  width={960}
+                  height={960}
+                  className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500 absolute"
+                />
+                <p className="text-5xl">Digital</p>
+              </div>
+            </Link>
           </div>
-          <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
-            <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">
-              <Image
-                src={"/Test_Image.png"}
-                alt={""}
-                width={960}
-                height={960}
-                className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500"
-              />
-            </div>
+          <div className="w-full md:w-1/3 aspect-square flex ">
+            <Link
+              href={`/${lang}/photography`}
+              className="flex items-center justify-center w-full h-full"
+            >
+              <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600 relative flex items-center justify-center">
+                <Image
+                  src={"/Test_Image.png"}
+                  alt={""}
+                  width={960}
+                  height={960}
+                  className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500 absolute"
+                />
+                <p className="text-5xl">Photography</p>
+              </div>
+            </Link>
           </div>
-          <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
-            <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">
-              <Image
-                src={"/Test_Image.png"}
-                alt={""}
-                width={960}
-                height={960}
-                className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500"
-              />
-            </div>
+          <div className="w-full md:w-1/3 aspect-square flex ">
+            <Link
+              href={`/${lang}/drawing`}
+              className="flex items-center justify-center w-full h-full"
+            >
+              <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600 relative flex items-center justify-center">
+                <Image
+                  src={"/Test_Image.png"}
+                  alt={""}
+                  width={960}
+                  height={960}
+                  className="w-full object-cover bg-fixed transition-opacity hover:opacity-0 duration-500 absolute"
+                />
+                <p className="text-5xl">Drawing</p>
+              </div>
+            </Link>
           </div>
           <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
             <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600">

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { cn } from "../utils";
-import { HomeIcon, PaletteIcon, BookOpenIcon, PhoneIcon } from "lucide-react";
+import { HomeIcon, BookOpenIcon, PhoneIcon } from "lucide-react";
 interface NavigationProps {
   lang: string;
 }
@@ -16,25 +16,12 @@ export const Navigation = (props: NavigationProps) => {
         Karolina Albrzykowska
       </p>
       <nav className="flex flex-row items-center gap-4 px-4 w-full justify-end">
-        <Link aria-label="home" href={`/${lang}/`}>
-          <div
-            className={cn(
-              "rounded-lg p-2 uppercase transition duration-300 group"
-            )}
-          >
-            <p className="hidden md:block">Główna</p>
-            <div className="md:hidden block">
-              <HomeIcon className="h-5 w-5" />
-            </div>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
-          </div>
-        </Link>
         <div
           className="relative"
           onMouseEnter={() => setPortfolioOpen(true)}
           onMouseLeave={() => setPortfolioOpen(false)}
         >
-          <Link aria-label="home" href={`/${lang}/portfolio`}>
+          <Link aria-label="home" href={`/${lang}`}>
             <div
               className={cn(
                 "rounded-lg p-2 uppercase transition duration-300 group"
@@ -42,7 +29,7 @@ export const Navigation = (props: NavigationProps) => {
             >
               <p className="hidden md:block">Portfolio</p>
               <div className="md:hidden block">
-                <PaletteIcon className="h-5 w-5" />
+                <HomeIcon className="h-5 w-5" />
               </div>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
             </div>
@@ -59,23 +46,23 @@ export const Navigation = (props: NavigationProps) => {
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
-              <Link aria-label="home" href={`/${lang}/portfolio`}>
+              <Link aria-label="home" href={`/${lang}/photography`}>
                 <p
                   className={cn(
                     "rounded-lg p-2 uppercase transition duration-300 group"
                   )}
                 >
-                  Sztuka 2
+                  Photography
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
-              <Link aria-label="home" href={`/${lang}/portfolio`}>
+              <Link aria-label="home" href={`/${lang}/drawing`}>
                 <p
                   className={cn(
                     "rounded-lg p-2 uppercase transition duration-300 group"
                   )}
                 >
-                  Sztuka 3
+                  Drawing
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
