@@ -37,7 +37,7 @@ export default async function Home({
       <Navigation lang={lang} />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
-          src={"/banner.JPG"}
+          src={"/banner.jpg"}
           alt={""}
           width={3300}
           height={1100}
