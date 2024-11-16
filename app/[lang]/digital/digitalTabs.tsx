@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { TwoDimensional } from "./twoDimentional";
-import { ThreeDimentional } from "./threeDimentional";
+import { TwoDimensional } from "./twoDimensional";
+import { ThreeDimensional } from "./threeDimensional";
 
 export const DigitalTabs = () => {
   const [tab, setTab] = useState<string>("");
@@ -42,7 +42,7 @@ export const DigitalTabs = () => {
         </div>
       </div>
       {tab == "2d" && <TwoDimensional />}
-      {tab == "3d" && <ThreeDimentional />}
+      {tab == "3d" && <ThreeDimensional />}
     </div>
   );
 };

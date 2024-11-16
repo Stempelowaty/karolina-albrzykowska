@@ -46,6 +46,32 @@ export default async function Home({
         <div className="flex w-full flex-wrap justify-center">
           <div className="w-full md:w-1/3 aspect-square flex ">
             <Link
+              href={`/${lang}/animation`}
+              className="flex items-center justify-center w-full h-full"
+            >
+              <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600 relative flex items-center justify-center">
+                <p className="text-5xl absolute">{dict.animation}</p>
+                <div
+                  className={
+                    "relative transition-opacity w-full h-full hover:opacity-0 duration-500"
+                  }
+                >
+                  <Image
+                    src={animationImage}
+                    alt=""
+                    className="w-full object-cover w-full h-full bg-fixed absolute"
+                  />
+                  <Image
+                    src={lang == "pl-PL" ? animationSubPL : animationSubEN}
+                    alt=""
+                    className="object-cover w-3/4 bg-fixed absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                  />
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="w-full md:w-1/3 aspect-square flex ">
+            <Link
               href={`/${lang}/digital`}
               className="flex items-center justify-center w-full h-full"
             >
@@ -122,32 +148,7 @@ export default async function Home({
               </div>
             </Link>
           </div>
-          <div className="w-full md:w-1/3 aspect-square flex ">
-            <Link
-              href={`/${lang}/animation`}
-              className="flex items-center justify-center w-full h-full"
-            >
-              <div className="w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600 relative flex items-center justify-center">
-                <p className="text-5xl absolute">{dict.animation}</p>
-                <div
-                  className={
-                    "relative transition-opacity w-full h-full hover:opacity-0 duration-500"
-                  }
-                >
-                  <Image
-                    src={animationImage}
-                    alt=""
-                    className="w-full object-cover w-full h-full bg-fixed absolute"
-                  />
-                  <Image
-                    src={lang == "pl-PL" ? animationSubPL : animationSubEN}
-                    alt=""
-                    className="object-cover w-3/4 bg-fixed absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                  />
-                </div>
-              </div>
-            </Link>
-          </div>
+
           <div className="w-full md:w-1/3 aspect-square flex ">
             <Link
               href={`/${lang}/sculpture`}
