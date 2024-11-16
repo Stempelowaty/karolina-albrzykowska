@@ -11,7 +11,7 @@ export const Navigation = (props: NavigationProps) => {
   const [isPortfolioOpen, setPortfolioOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-[99] flex justify-space-between text-background bg-foreground font-lexend text-lg">
+    <div className="sticky top-0 z-[10] flex justify-space-between text-background bg-foreground font-lexend text-lg">
       <p className="w-full flex items-center uppercase px-4">
         Karolina Albrzykowska
       </p>
