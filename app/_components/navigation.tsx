@@ -3,11 +3,14 @@ import Link from "next/link";
 import { useState } from "react";
 import { cn } from "../utils";
 import { HomeIcon, BookOpenIcon, PhoneIcon } from "lucide-react";
+import { getDictionary } from "./dictionary";
 interface NavigationProps {
   lang: string;
 }
 export const Navigation = (props: NavigationProps) => {
   const { lang } = props;
+  const dict = getDictionary(lang);
+
   const [isPortfolioOpen, setPortfolioOpen] = useState(false);
 
   return (
@@ -27,7 +30,7 @@ export const Navigation = (props: NavigationProps) => {
                 "rounded-lg p-2 uppercase transition duration-300 group"
               )}
             >
-              <p className="hidden md:block">Portfolio</p>
+              <p className="hidden md:block">{dict.portfolio}</p>
               <div className="md:hidden block">
                 <HomeIcon className="h-5 w-5" />
               </div>
@@ -42,7 +45,7 @@ export const Navigation = (props: NavigationProps) => {
                     "rounded-lg p-2 uppercase transition duration-300 group"
                   )}
                 >
-                  Digital
+                  {dict.digital}
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
@@ -52,7 +55,7 @@ export const Navigation = (props: NavigationProps) => {
                     "rounded-lg p-2 uppercase transition duration-300 group"
                   )}
                 >
-                  Photography
+                  {dict.photography}
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
@@ -62,7 +65,27 @@ export const Navigation = (props: NavigationProps) => {
                     "rounded-lg p-2 uppercase transition duration-300 group"
                   )}
                 >
-                  Drawing
+                  {dict.drawing}
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+                </p>
+              </Link>
+              <Link aria-label="home" href={`/${lang}/animation`}>
+                <p
+                  className={cn(
+                    "rounded-lg p-2 uppercase transition duration-300 group"
+                  )}
+                >
+                  {dict.animation}
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+                </p>
+              </Link>
+              <Link aria-label="home" href={`/${lang}/sculpture`}>
+                <p
+                  className={cn(
+                    "rounded-lg p-2 uppercase transition duration-300 group"
+                  )}
+                >
+                  {dict.sculpture}
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
