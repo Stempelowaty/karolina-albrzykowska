@@ -68,9 +68,12 @@ export default async function Drawing({
                         className="rounded-lg max-h-[calc(95vh-12rem)]  object-contain"
                       />
                     </DialogTitle>
-                    <p className="text-xl max-h-[9rem]">
-                      {dict[`center_${index + 1}` as keyof typeof dict]}
-                    </p>
+                    <div className="text-xl max-h-[9rem] font-lexend flex flex-col items-center">
+                      <p className="font-bold">
+                        {dict[`leftTitle_${index + 1}` as keyof typeof dict]}
+                      </p>
+                      <p>{dict[`left_${index + 1}` as keyof typeof dict]}</p>
+                    </div>
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
@@ -93,9 +96,12 @@ export default async function Drawing({
                         className="rounded-lg max-h-[calc(95vh-12rem)] object-contain"
                       />
                     </DialogTitle>
-                    <p className="text-xl max-h-[9rem]">
-                      {dict[`right_${index + 1}` as keyof typeof dict]}
-                    </p>
+                    <div className="text-xl max-h-[9rem] font-lexend flex flex-col items-center">
+                      <p className="font-bold">
+                        {dict[`leftTitle_${index + 1}` as keyof typeof dict]}
+                      </p>
+                      <p>{dict[`left_${index + 1}` as keyof typeof dict]}</p>
+                    </div>
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
