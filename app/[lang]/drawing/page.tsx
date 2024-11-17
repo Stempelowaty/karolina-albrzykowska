@@ -29,7 +29,11 @@ export default async function Drawing({
             <div key={src?.src}>
               <Dialog>
                 <DialogTrigger>
-                  <Image src={src} alt={src?.src} className="rounded-lg" />
+                  <Image
+                    src={src}
+                    alt={src?.src}
+                    className="rounded-lg hover:scale-105 transition duration-500"
+                  />
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader className="flex items-center justify-center w-full h-full">
@@ -57,7 +61,11 @@ export default async function Drawing({
             <div key={src?.src}>
               <Dialog>
                 <DialogTrigger>
-                  <Image src={src} alt={src?.src} className="rounded-lg" />
+                  <Image
+                    src={src}
+                    alt={src?.src}
+                    className="rounded-lg hover:scale-105 transition duration-500"
+                  />
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader className="flex items-center justify-center w-full h-full">
@@ -85,7 +93,11 @@ export default async function Drawing({
             <div key={src?.src}>
               <Dialog>
                 <DialogTrigger>
-                  <Image src={src} alt={src?.src} className="rounded-lg" />
+                  <Image
+                    src={src}
+                    alt={src?.src}
+                    className="rounded-lg hover:scale-105 transition duration-500"
+                  />
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader className="flex items-center justify-center w-full h-full">
@@ -93,7 +105,7 @@ export default async function Drawing({
                       <Image
                         src={src}
                         alt={src?.src}
-                        className="rounded-lg max-h-[calc(95vh-12rem)] object-contain"
+                        className="rounded-lg max-h-[calc(95vh-12rem)] object-contain "
                       />
                     </DialogTitle>
                     <div className="text-xl max-h-[9rem] font-lexend flex flex-col items-center">

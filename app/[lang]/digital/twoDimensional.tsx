@@ -20,7 +20,11 @@ export const TwoDimensional = () => {
             <div key={src?.src}>
               <Dialog>
                 <DialogTrigger>
-                  <Image src={src} alt={src?.src} className="rounded-lg" />
+                  <Image
+                    src={src}
+                    alt={src?.src}
+                    className="rounded-lg hover:scale-105 transition duration-500"
+                  />
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
@@ -42,7 +46,11 @@ export const TwoDimensional = () => {
             <div key={src?.src}>
               <Dialog>
                 <DialogTrigger>
-                  <Image src={src} alt={src?.src} className="rounded-lg" />
+                  <Image
+                    src={src}
+                    alt={src?.src}
+                    className="rounded-lg hover:scale-105 transition duration-500"
+                  />
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
@@ -64,7 +72,11 @@ export const TwoDimensional = () => {
             <div key={src?.src}>
               <Dialog>
                 <DialogTrigger>
-                  <Image src={src} alt={src?.src} className="rounded-lg" />
+                  <Image
+                    src={src}
+                    alt={src?.src}
+                    className="rounded-lg hover:scale-105 transition duration-500"
+                  />
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>

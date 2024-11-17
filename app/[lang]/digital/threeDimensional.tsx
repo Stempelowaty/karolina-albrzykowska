@@ -17,14 +17,14 @@ export const ThreeDimensional = () => {
       <div className="flex flex-wrap justify-center gap-4 w-3/4">
         {threeDimensionalArray?.map((item, index) => {
           return (
-            <div key={index} className="font-lexend w-1/3 p-4">
+            <div key={index} className="font-lexend w-1/3 aspect-square p-4">
               <Dialog>
-                <DialogTrigger>
+                <DialogTrigger className="w-full h-full">
                   <div className="w-full h-full">
                     <Image
                       src={item}
                       alt=""
-                      className="rounded-lg aspect-square object-fit"
+                      className="rounded-lg object-none w-full h-full"
                     />
                   </div>
                 </DialogTrigger>
