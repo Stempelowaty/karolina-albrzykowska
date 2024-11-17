@@ -22,6 +22,7 @@ import { Navigation } from "../_components/navigation";
 import { Top } from "../_components/top";
 import Link from "next/link";
 import { getDictionary } from "./dictionary";
+import { Banner } from "../_components/banner";
 
 export default async function Home({
   params,
@@ -36,13 +37,7 @@ export default async function Home({
       <Top lang={lang} />
       <Navigation lang={lang} />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          src={"/banner.jpg"}
-          alt={""}
-          width={3300}
-          height={1100}
-          className="w-full h-64 object-cover bg-fixed"
-        />
+        <Banner />
         <div className="flex w-full flex-wrap justify-center">
           <div className="w-full md:w-1/3 aspect-square flex ">
             <Link
