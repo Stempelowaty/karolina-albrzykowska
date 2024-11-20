@@ -1,4 +1,5 @@
 "use client";
+import { LanguagesIcon } from "lucide-react";
 import Image from "next/image";
 import { redirect, usePathname } from "next/navigation";
 
@@ -21,13 +22,14 @@ export const Top = (props: TopProps) => {
         />
       </div>
       <button
-        className="absolute top-4 right-4"
+        className="absolute top-5 right-5 flex items-center hover:scale-110 duration-500 transition"
         onClick={() => {
           if (lang === "pl-PL") redirect(`/en-US/${pathname.substring(6)}`);
           else redirect(`/pl-PL/${pathname.substring(6)}`);
         }}
       >
-        {props.lang}
+        <LanguagesIcon className="w-5 h-5" />
+        {props.lang === "pl-PL" ? "EN" : "PL"}
       </button>
     </div>
   );

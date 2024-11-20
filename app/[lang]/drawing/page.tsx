@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/app/_components/popup";
+} from "@/app/_components/shadPopup";
 import Image from "next/image";
 import { firstCol, secondCol, thirdCol } from "./utils";
 

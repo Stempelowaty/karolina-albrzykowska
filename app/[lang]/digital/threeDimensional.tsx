@@ -6,7 +6,7 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogDescription,
-} from "@/app/_components/popup";
+} from "@/app/_components/shadPopup";
 import { threeDimensionalArray } from "./utils";
 
 export const ThreeDimensional = () => {

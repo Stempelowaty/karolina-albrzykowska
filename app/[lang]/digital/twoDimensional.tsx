@@ -5,7 +5,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/app/_components/popup";
+} from "@/app/_components/shadPopup";
 import { firstCol, secondCol, thirdCol } from "./utils";
 
 export const TwoDimensional = () => {
