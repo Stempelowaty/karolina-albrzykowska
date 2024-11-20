@@ -39,44 +39,44 @@ export default async function Home({
         <Banner />
         <div className="flex w-full flex-wrap justify-center">
           <HomeNavigation
+            navLink={"animation"}
             label={dict.animation}
             lang={lang}
             src={animationImage}
             labelImagePl={animationSubPL}
             labelImageEn={animationSubEN}
-            navLink={"animation"}
           />
           <HomeNavigation
+            navLink={"digital"}
             label={dict.digital}
             lang={lang}
             src={digitalImage}
             labelImagePl={digitalSub}
             labelImageEn={digitalSub}
-            navLink={"digital"}
           />
           <HomeNavigation
+            navLink={"photography"}
             label={dict.photography}
             lang={lang}
             src={photographyImage}
             labelImagePl={photographySubPL}
             labelImageEn={photographySubEn}
-            navLink={"photography"}
           />
           <HomeNavigation
+            navLink={"drawing"}
             label={dict.drawing}
             lang={lang}
             src={drawingImage}
             labelImagePl={drawingSubPL}
             labelImageEn={drawingSubEn}
-            navLink={"drawing"}
           />
           <HomeNavigation
+            navLink={"sculpture"}
             label={dict.sculpture}
             lang={lang}
             src={sculptureImage}
             labelImagePl={sculptureSubPL}
             labelImageEn={sculptureSubEN}
-            navLink={"sculpture"}
           />
         </div>
       </main>

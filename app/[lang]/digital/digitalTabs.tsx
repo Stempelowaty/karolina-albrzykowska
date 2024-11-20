@@ -12,37 +12,37 @@ export const DigitalTabs = () => {
       <div className="flex justify-center">
         <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
           <div
-            className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600 flex justify-center items-center cursor-pointer"
+            className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 hover:bg-rose-600 flex justify-center items-center rounded-lg"
             onClick={() => setTab("2d")}
           >
+            <p className="z-10 text-9xl pointer-events-none">2D</p>
             <Image
               src={"/Test_Image.png"}
               alt={""}
               width={960}
               height={960}
-              className="absolute w-full object-cover bg-fixed transition-opacity hover:opacity-20 duration-500"
+              className="absolute w-full object-cover bg-fixed transition-opacity hover:opacity-20 duration-500 cursor-pointer rounded-lg"
             />
-            <p className="z-10 text-9xl">2D</p>
           </div>
         </div>
         <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
           <div
-            className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 bg-rose-600 flex justify-center items-center cursor-pointer"
+            className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 hover:bg-rose-600 flex justify-center items-center rounded-lg"
             onClick={() => setTab("3d")}
           >
+            <p className="z-10 text-9xl pointer-events-none">3D</p>
             <Image
               src={"/Test_Image.png"}
               alt={""}
               width={960}
               height={960}
-              className="absolute w-full object-cover bg-fixed transition-opacity hover:opacity-20 duration-500"
+              className="absolute w-full object-cover bg-fixed transition-opacity hover:opacity-20 duration-500 cursor-pointer rounded-lg"
             />
-            <p className="z-10 text-9xl">3D</p>
           </div>
         </div>
       </div>
-      {tab == "2d" && <TwoDimensional />}
-      {tab == "3d" && <ThreeDimensional />}
+      {tab === "2d" && <TwoDimensional />}
+      {tab === "3d" && <ThreeDimensional />}
     </div>
   );
 };

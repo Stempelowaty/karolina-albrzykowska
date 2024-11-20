@@ -1,4 +1,6 @@
 import { type AvailableLocalesType } from "@/app/utils";
+export const getDictionary = (locale: string) =>
+  dictionaries[locale as AvailableLocalesType];
 
 const dictionaries = {
   "en-US": {
@@ -191,6 +193,3 @@ const dictionaries = {
     right_15: "akwarela i flamastry 21 x 14,8 cm",
   },
 };
-
-export const getDictionary = (locale: string) =>
-  dictionaries[locale as AvailableLocalesType];
