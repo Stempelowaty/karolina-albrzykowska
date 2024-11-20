@@ -11,7 +11,7 @@ export const Top = (props: TopProps) => {
   const { lang } = props;
   const pathname = usePathname();
   return (
-    <div className="relative w-full bg-foreground text-background font-lexend flex flex-col items-center py-12 pb-20">
+    <div className="relative w-full bg-foreground text-background font-lexend flex flex-col items-center py-12 pb-4 md:pb-20">
       <div className="flex flex-col items-center text-foreground w-36 h-24 justify-center rounded-xl">
         <Image
           src={"/logo.svg"}
