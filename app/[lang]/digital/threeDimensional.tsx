@@ -5,7 +5,6 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogDescription,
 } from "@/app/_components/shadPopup";
 import { threeDimensionalArray } from "./utils";
 
@@ -19,7 +18,7 @@ export const ThreeDimensional = () => {
               <DialogTitle className="flex items-center justify-center ">
                 Tytuł
               </DialogTitle>
-              <DialogDescription className="flex flex-col items-center">
+              <div className="flex flex-col items-center">
                 <div>
                   <Image
                     src={"/3d/1.jpg"}
@@ -39,7 +38,7 @@ export const ThreeDimensional = () => {
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
                 </div>
-              </DialogDescription>
+              </div>
             </DialogHeader>
           </DialogContent>
         );
@@ -50,7 +49,7 @@ export const ThreeDimensional = () => {
               <DialogTitle className="flex items-center justify-center ">
                 Tytuł
               </DialogTitle>
-              <DialogDescription className="flex items-center justify-center">
+              <div className="flex items-center justify-center">
                 <div className="w-1/2 flex flex-col h-full">
                   <div className="p-2">
                     <Image
@@ -92,7 +91,7 @@ export const ThreeDimensional = () => {
                     />
                   </div>
                 </div>
-              </DialogDescription>
+              </div>
             </DialogHeader>
           </DialogContent>
         );
@@ -183,7 +182,7 @@ export const ThreeDimensional = () => {
               <DialogTitle className="flex items-center justify-center ">
                 Tytuł
               </DialogTitle>
-              <DialogDescription className="flex flex-col items-center">
+              <div className="flex flex-col items-center">
                 <div>
                   <Image
                     src={"/3d/4.jpg"}
@@ -203,7 +202,7 @@ export const ThreeDimensional = () => {
                   cupidatat non proident, sunt in culpa qui officia deserunt
                   mollit anim id est laborum.
                 </div>
-              </DialogDescription>
+              </div>
             </DialogHeader>
           </DialogContent>
         );
@@ -214,7 +213,7 @@ export const ThreeDimensional = () => {
               <DialogTitle className="flex items-center justify-center ">
                 Tytuł
               </DialogTitle>
-              <DialogDescription className="flex items-center justify-center">
+              <div className="flex items-center justify-center">
                 <div className="w-1/2 flex flex-col h-full">
                   <div className="p-2">
                     <Image
@@ -256,7 +255,7 @@ export const ThreeDimensional = () => {
                     />
                   </div>
                 </div>
-              </DialogDescription>
+              </div>
             </DialogHeader>
           </DialogContent>
         );
