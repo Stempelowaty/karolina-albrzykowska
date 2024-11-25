@@ -11,7 +11,7 @@ export default async function Sculpture({
     <div>
       <Top lang={lang} />
       <Navigation lang={lang} />
-      Sculpture
+      Prezentacja rzeźby w trakcie pracy
     </div>
   );
 }

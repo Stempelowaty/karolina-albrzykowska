@@ -3,8 +3,10 @@ import Image from "next/image";
 import { useState } from "react";
 import { TwoDimensional } from "./twoDimensional";
 import { ThreeDimensional } from "./threeDimensional";
-
-export const DigitalTabs = () => {
+interface DigitalTabsProps {
+  lang: string;
+}
+export const DigitalTabs = (props: DigitalTabsProps) => {
   const [tab, setTab] = useState<string>("");
 
   return (
@@ -42,7 +44,7 @@ export const DigitalTabs = () => {
         </div>
       </div>
       {tab === "2d" && <TwoDimensional />}
-      {tab === "3d" && <ThreeDimensional />}
+      {tab === "3d" && <ThreeDimensional lang={props.lang} />}
     </div>
   );
 };

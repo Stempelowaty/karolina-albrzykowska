@@ -2,7 +2,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { cn } from "../utils";
-import { HomeIcon, BookOpenIcon, PhoneIcon } from "lucide-react";
+import {
+  HomeIcon,
+  // BookOpenIcon,
+  PhoneIcon,
+} from "lucide-react";
 import { getDictionary } from "./dictionary";
 interface NavigationProps {
   lang: string;
@@ -14,7 +18,7 @@ export const Navigation = (props: NavigationProps) => {
   const [isPortfolioOpen, setPortfolioOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-[10] flex justify-space-between text-background bg-foreground font-lexend text-lg">
+    <div className="sticky top-0 z-[40] flex justify-space-between text-background bg-foreground font-lexend text-lg">
       <p className="w-full flex items-center uppercase px-4">
         Karolina Albrzykowska
       </p>
@@ -92,7 +96,7 @@ export const Navigation = (props: NavigationProps) => {
             </div>
           )}
         </div>
-        <Link aria-label="bio" href={`/${lang}/bio`}>
+        {/* <Link aria-label="bio" href={`/${lang}/bio`}>
           <div
             className={cn(
               "rounded-lg p-2 uppercase transition duration-300 group"
@@ -104,7 +108,7 @@ export const Navigation = (props: NavigationProps) => {
             </div>
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
           </div>
-        </Link>
+        </Link> */}
         <Link aria-label="contact" href={`/${lang}/contact`}>
           <div
             className={cn(

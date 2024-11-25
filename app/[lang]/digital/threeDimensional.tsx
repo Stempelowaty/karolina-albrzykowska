@@ -3,41 +3,34 @@ import {
   Dialog,
   DialogContent,
   DialogHeader,
-  DialogTitle,
   DialogTrigger,
+  DialogTitle,
 } from "@/app/_components/shadPopup";
 import { threeDimensionalArray } from "./utils";
-
-export const ThreeDimensional = () => {
+import { getDictionary } from "./dictionary";
+interface ThreeDimensionalsProps {
+  lang: string;
+}
+export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
+  const dict = getDictionary(props.lang);
   const getDialogContent = (index: number) => {
     switch (index) {
       case 1:
         return (
           <DialogContent>
             <DialogHeader>
-              <DialogTitle className="flex items-center justify-center ">
-                Tytuł
-              </DialogTitle>
+              <DialogTitle />
               <div className="flex flex-col items-center">
                 <div>
                   <Image
-                    src={"/3d/1.jpg"}
+                    src={"/3d/1_1.jpg"}
                     alt=""
                     width={1920}
                     height={1080}
                     className="rounded-lg max-h-full max-w-full"
                   />
                 </div>
-                <div className="p-2 font-lexend">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </div>
+                <div className="p-2 font-lexend">{dict.default}</div>
               </div>
             </DialogHeader>
           </DialogContent>
@@ -46,9 +39,7 @@ export const ThreeDimensional = () => {
         return (
           <DialogContent>
             <DialogHeader>
-              <DialogTitle className="flex items-center justify-center ">
-                Tytuł
-              </DialogTitle>
+              <DialogTitle />
               <div className="flex items-center justify-center">
                 <div className="w-1/2 flex flex-col h-full">
                   <div className="p-2">
@@ -71,16 +62,7 @@ export const ThreeDimensional = () => {
                   </div>
                 </div>
                 <div className="w-1/2 flex flex-col h-full">
-                  <div className="h-1/2 p-2 font-lexend">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </div>
+                  <div className="h-1/2 p-2 font-lexend">{dict.testing}</div>
                   <div className="p-2">
                     <Image
                       src={"/3d/2_1.jpg"}
@@ -99,9 +81,7 @@ export const ThreeDimensional = () => {
         return (
           <DialogContent>
             <DialogHeader>
-              <DialogTitle className="flex items-center justify-center">
-                Tytuł
-              </DialogTitle>
+              <DialogTitle />
               <div className="w-full h-full">
                 <div className="w-full h-3/5 flex ">
                   <div className="w-1/3 h-full flex flex-col justify-end p-2">
@@ -121,7 +101,7 @@ export const ThreeDimensional = () => {
                       alt=""
                       className="rounded-lg"
                     />
-                    <div>sample text</div>
+                    <div>{dict.ibex}</div>
                   </div>
                   <div className="w-1/3 h-full flex flex-col justify-end p-2">
                     <Image
@@ -179,29 +159,18 @@ export const ThreeDimensional = () => {
         return (
           <DialogContent>
             <DialogHeader>
-              <DialogTitle className="flex items-center justify-center ">
-                Tytuł
-              </DialogTitle>
+              <DialogTitle />
               <div className="flex flex-col items-center">
                 <div>
                   <Image
-                    src={"/3d/4.jpg"}
+                    src={"/3d/4_1.jpg"}
                     alt=""
                     width={1920}
                     height={1080}
                     className="rounded-lg max-h-full max-w-full"
                   />
                 </div>
-                <div className="p-2 font-lexend">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </div>
+                <div className="p-2 font-lexend">{dict.default}</div>
               </div>
             </DialogHeader>
           </DialogContent>
@@ -210,9 +179,7 @@ export const ThreeDimensional = () => {
         return (
           <DialogContent>
             <DialogHeader>
-              <DialogTitle className="flex items-center justify-center ">
-                Tytuł
-              </DialogTitle>
+              <DialogTitle />
               <div className="flex items-center justify-center">
                 <div className="w-1/2 flex flex-col h-full">
                   <div className="p-2">
@@ -235,16 +202,7 @@ export const ThreeDimensional = () => {
                   </div>
                 </div>
                 <div className="w-1/2 flex flex-col h-full">
-                  <div className="h-1/2 p-2 font-lexend">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                  </div>
+                  <div className="h-1/2 p-2 font-lexend">{dict.default}</div>
                   <div className="p-2">
                     <Image
                       src={"/3d/5_1.jpg"}

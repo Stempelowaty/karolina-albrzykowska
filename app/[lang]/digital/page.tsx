@@ -13,7 +13,7 @@ export default async function Digital({
     <div>
       <Top lang={lang} />
       <Navigation lang={lang} />
-      <DigitalTabs />
+      <DigitalTabs lang={lang} />
     </div>
   );
 }

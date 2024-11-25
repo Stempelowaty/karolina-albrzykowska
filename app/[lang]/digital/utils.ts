@@ -19,10 +19,10 @@ import p18 from "@/public/2d/18.jpg";
 import p19 from "@/public/2d/19.jpg";
 
 import td1 from "@/public/3d/1.jpg";
-import td2 from "@/public/3d/2_1.jpg";
-import td3 from "@/public/3d/3_1.png";
+import td2 from "@/public/3d/2.jpg";
+import td3 from "@/public/3d/3.jpg";
 import td4 from "@/public/3d/4.jpg";
-import td5 from "@/public/3d/5_1.jpg";
+import td5 from "@/public/3d/5.jpg";
 
 export const firstCol = [p1, p2, p3, p4, p5];
 export const secondCol = [p6, p7, p8, p9, p10, p11, p12];
