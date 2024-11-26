@@ -1,14 +1,14 @@
-import thumbnail1 from "@/public/animation/thumbnail/1.png";
-import thumbnail2 from "@/public/animation/thumbnail/2.png";
-import thumbnail3 from "@/public/animation/thumbnail/3.png";
-import thumbnail4 from "@/public/animation/thumbnail/4.png";
-import thumbnail5 from "@/public/animation/thumbnail/5.png";
+import thumbnail1 from "@/public/animation/thumbnail/1.jpg";
+import thumbnail2 from "@/public/animation/thumbnail/2.jpg";
+import thumbnail3 from "@/public/animation/thumbnail/3.jpg";
+import thumbnail4 from "@/public/animation/thumbnail/4.jpg";
+import thumbnail5 from "@/public/animation/thumbnail/5.jpg";
 import thumbnail6 from "@/public/animation/thumbnail/6.jpg";
-import thumbnail7 from "@/public/animation/thumbnail/7.png";
-import thumbnail8 from "@/public/animation/thumbnail/8.png";
-import thumbnail9 from "@/public/animation/thumbnail/9.png";
-import thumbnail10 from "@/public/animation/thumbnail/10.png";
-import thumbnail11 from "@/public/animation/thumbnail/11.png";
+import thumbnail7 from "@/public/animation/thumbnail/7.jpg";
+import thumbnail8 from "@/public/animation/thumbnail/8.jpg";
+import thumbnail9 from "@/public/animation/thumbnail/9.jpg";
+import thumbnail10 from "@/public/animation/thumbnail/10.jpg";
+import thumbnail11 from "@/public/animation/thumbnail/11.jpg";
 // import thumbnail12 from "@/public/animation/thumbnail/12.jpg";
 
 export const thumbnails = [
