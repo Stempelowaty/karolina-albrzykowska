@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
+import { cn } from "../utils";
 
 const lexend = Lexend({
   subsets: ["latin"],
@@ -20,8 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${lexend.variable} antialiased`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={cn(`${lexend.variable}`, "antialiased")}>
+        {children}
+      </body>
     </html>
   );
 }

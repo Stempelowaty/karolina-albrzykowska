@@ -20,7 +20,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
           <DialogContent>
             <DialogHeader>
               <DialogTitle />
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col h-full items-center justify-center">
                 <div>
                   <Image
                     src={"/3d/1_1.jpg"}
@@ -160,7 +160,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
           <DialogContent>
             <DialogHeader>
               <DialogTitle />
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col h-full items-center justify-center">
                 <div>
                   <Image
                     src={"/3d/4_1.jpg"}
