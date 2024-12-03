@@ -8,6 +8,7 @@ const dictionaries = {
     animation: "Animation",
     sculpture: "Sculpture",
     portfolio: "Portfolio",
+    contact: "Contact",
   },
   "pl-PL": {
     photography: "Fotografia",
@@ -16,6 +17,7 @@ const dictionaries = {
     animation: "Animacja",
     sculpture: "Rzeźba",
     portfolio: "Portfolio",
+    contact: "Kontakt",
   },
 };
 

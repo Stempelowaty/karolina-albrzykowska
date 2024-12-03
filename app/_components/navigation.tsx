@@ -96,26 +96,13 @@ export const Navigation = (props: NavigationProps) => {
             </div>
           )}
         </div>
-        {/* <Link aria-label="bio" href={`/${lang}/bio`}>
-          <div
-            className={cn(
-              "rounded-lg p-2 uppercase transition duration-300 group"
-            )}
-          >
-            <p className="hidden md:block">Bio</p>
-            <div className="md:hidden block">
-              <BookOpenIcon className="h-5 w-5" />
-            </div>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
-          </div>
-        </Link> */}
         <Link aria-label="contact" href={`/${lang}/contact`}>
           <div
             className={cn(
               "rounded-lg p-2 uppercase transition duration-300 group"
             )}
           >
-            <p className="hidden md:block">Kontakt</p>
+            <p className="hidden md:block">{dict.contact}</p>
             <div className="md:hidden block">
               <PhoneIcon className="h-5 w-5" />
             </div>
