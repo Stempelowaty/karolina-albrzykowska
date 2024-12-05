@@ -7,8 +7,8 @@ import {
   DialogTrigger,
 } from "@/app/_components/shadPopup";
 import { firstCol, secondCol, thirdCol } from "./utils";
-import { PhotoProvider, PhotoView } from "react-photo-view";
-import "react-photo-view/dist/react-photo-view.css";
+// import { PhotoProvider, PhotoView } from "react-photo-view";
+// import "react-photo-view/dist/react-photo-view.css";
 
 export const TwoDimensional = () => {
   return (
@@ -19,7 +19,7 @@ export const TwoDimensional = () => {
       <div className="grid mt-12 gap-4 grid-cols-1 sm:grid-cols-3 p-4">
         <div className="flex flex-col gap-4 items-start">
           {firstCol?.map((src, index) => (
-            <div key={src?.src}>
+            <div key={`${src?.src}${index}`}>
               <Dialog>
                 <DialogTrigger>
                   <Image
@@ -31,15 +31,15 @@ export const TwoDimensional = () => {
                 <DialogContent>
                   <DialogHeader>
                     <DialogTitle className="flex items-center justify-center w-full h-full">
-                      <PhotoProvider>
-                        <PhotoView src={`/2d/${index + 1}.jpg`}>
-                          <Image
-                            src={src}
-                            alt={src?.src}
-                            className="rounded-lg max-h-[calc(95vh-3rem)] object-contain"
-                          />
-                        </PhotoView>
-                      </PhotoProvider>
+                      {/* <PhotoProvider>
+                        <PhotoView src={`/2d/${index + 1}.jpg`}> */}
+                      <Image
+                        src={src}
+                        alt={src?.src}
+                        className="rounded-lg max-h-[calc(95vh-3rem)] object-contain"
+                      />
+                      {/* </PhotoView>
+                      </PhotoProvider> */}
                     </DialogTitle>
                   </DialogHeader>
                 </DialogContent>
