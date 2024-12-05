@@ -35,32 +35,33 @@ export const Details = (props: DetailsProps) => {
       {count !== null ? (
         <Carousel
           opts={{
-            align: "start",
             loop: true,
           }}
           className="w-3/4"
         >
           <CarouselContent>
             {Array.from({ length: count }).map((_, i) => (
-              <CarouselItem key={i} className="relative w-full h-[80vh]">
+              <CarouselItem
+                key={i}
+                className="relative w-full h-[80vh] w-full bg-stone-800"
+              >
                 <Image
                   src={`/rzezba/${index + 1}_${i + 1}.jpg`}
                   alt={`Image ${i + 1}`}
-                  layout="fill"
-                  objectFit="contain"
-                  className="rounded-lg"
+                  fill
+                  className="rounded-lg object-contain"
                   priority={i === 0}
                 />
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          {count > 1 && <CarouselPrevious />}
+          {count > 1 && <CarouselNext />}
         </Carousel>
       ) : (
         `Loading...`
       )}
-      <div className="flex flex-col gap-3 pt-6 font-lexend">
+      <div className="flex flex-col w-full gap-3 p-6 font-lexend">
         <div className="text-extrabold text-xl">
           {dict[`title${index + 1}` as keyof typeof dict]}
         </div>
