@@ -1,14 +1,7 @@
 import Image from "next/image";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/app/_components/shadPopup";
 import { firstCol, secondCol, thirdCol } from "./utils";
-// import { PhotoProvider, PhotoView } from "react-photo-view";
-// import "react-photo-view/dist/react-photo-view.css";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 
 export const TwoDimensional = () => {
   return (
@@ -20,82 +13,45 @@ export const TwoDimensional = () => {
         <div className="flex flex-col gap-4 items-start">
           {firstCol?.map((src, index) => (
             <div key={`${src?.src}${index}`}>
-              <Dialog>
-                <DialogTrigger>
+              <PhotoProvider>
+                <PhotoView src={`/2d/1_${index + 1}.jpg`}>
                   <Image
                     src={src}
                     alt={src?.src}
-                    className="rounded-lg hover:scale-105 transition duration-500"
+                    className="rounded-lg hover:scale-105 transition duration-500 cursor-pointer"
                   />
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle className="flex items-center justify-center w-full h-full">
-                      {/* <PhotoProvider>
-                        <PhotoView src={`/2d/${index + 1}.jpg`}> */}
-                      <Image
-                        src={src}
-                        alt={src?.src}
-                        className="rounded-lg max-h-[calc(95vh-3rem)] object-contain"
-                      />
-                      {/* </PhotoView>
-                      </PhotoProvider> */}
-                    </DialogTitle>
-                  </DialogHeader>
-                </DialogContent>
-              </Dialog>
+                </PhotoView>
+              </PhotoProvider>
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-4 items-start">
-          {secondCol?.map((src) => (
-            <div key={src?.src}>
-              <Dialog>
-                <DialogTrigger>
+          {secondCol?.map((src, index) => (
+            <div key={`${src?.src}${index}`}>
+              <PhotoProvider>
+                <PhotoView src={`/2d/2_${index + 1}.jpg`}>
                   <Image
                     src={src}
                     alt={src?.src}
-                    className="rounded-lg hover:scale-105 transition duration-500"
+                    className="rounded-lg hover:scale-105 transition duration-500 cursor-pointer"
                   />
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle className="flex items-center justify-center w-full h-full">
-                      <Image
-                        src={src}
-                        alt={src?.src}
-                        className="rounded-lg max-h-[calc(95vh-3rem)] object-contain"
-                      />
-                    </DialogTitle>
-                  </DialogHeader>
-                </DialogContent>
-              </Dialog>
+                </PhotoView>
+              </PhotoProvider>
             </div>
           ))}
         </div>
         <div className="flex flex-col gap-4 items-start">
-          {thirdCol?.map((src) => (
-            <div key={src?.src}>
-              <Dialog>
-                <DialogTrigger>
+          {thirdCol?.map((src, index) => (
+            <div key={`${src?.src}${index}`}>
+              <PhotoProvider>
+                <PhotoView src={`/2d/3_${index + 1}.jpg`}>
                   <Image
                     src={src}
                     alt={src?.src}
-                    className="rounded-lg hover:scale-105 transition duration-500"
+                    className="rounded-lg hover:scale-105 transition duration-500 cursor-pointer"
                   />
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle className="flex items-center justify-center w-full h-full">
-                      <Image
-                        src={src}
-                        alt={src?.src}
-                        className="rounded-lg max-h-[calc(95vh-3rem)] object-contain"
-                      />
-                    </DialogTitle>
-                  </DialogHeader>
-                </DialogContent>
-              </Dialog>
+                </PhotoView>
+              </PhotoProvider>
             </div>
           ))}
         </div>

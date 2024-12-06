@@ -38,7 +38,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
       case 2:
         return (
           <DialogContent>
-            <DialogHeader>
+            <DialogHeader className="w-full h-full flex justify-center">
               <DialogTitle />
               <div className="flex items-center justify-center">
                 <div className="w-1/2 flex flex-col h-full">
@@ -178,7 +178,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
       case 5:
         return (
           <DialogContent>
-            <DialogHeader>
+            <DialogHeader className="w-full h-full flex justify-center">
               <DialogTitle />
               <div className="flex items-center justify-center">
                 <div className="w-1/2 flex flex-col h-full">
@@ -240,7 +240,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                     <Image
                       src={item}
                       alt=""
-                      className="rounded-lg hover:scale-105 transition duration-500 h-full w-full"
+                      className="rounded-lg hover:scale-105 transition duration-500 h-full w-full cursor-pointer"
                     />
                   </div>
                 </DialogTrigger>

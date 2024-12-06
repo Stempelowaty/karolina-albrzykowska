@@ -55,7 +55,7 @@ export default async function Home({
             labelImageEn={digitalSub}
           />
           <HomeNavigation
-            navLink={"photography"}
+            navLink={"photos"}
             label={dict.photography}
             lang={lang}
             src={photographyImage}

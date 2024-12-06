@@ -53,7 +53,7 @@ export const Navigation = (props: NavigationProps) => {
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
                 </p>
               </Link>
-              <Link aria-label="home" href={`/${lang}/photography`}>
+              <Link aria-label="home" href={`/${lang}/photos`}>
                 <p
                   className={cn(
                     "rounded-lg p-2 uppercase transition duration-300 group"
