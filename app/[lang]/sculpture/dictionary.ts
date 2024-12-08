@@ -2,6 +2,7 @@ import { type AvailableLocalesType } from "@/app/utils";
 
 const dictionaries = {
   "en-US": {
+    back: "Back",
     title1: "Beyond the horizon",
     materials1: "Kappa, paper. Welding glass 2021",
     dimentions1: "10x10x10 cm, 5 pieces",
@@ -73,7 +74,8 @@ const dictionaries = {
     title15: "Aurora Borealis",
     materials15: "Aluminum 2023",
     dimentions15: "17x10x2 cm",
-    description15: "",
+    description15:
+      "The linearity of the cuts symbolizes the waves of solar wind emitted by the Sun, which, during their journey through space, collide with oxygen and nitrogen atoms in Earth's atmosphere. This phenomenon of energy transformation through collision results in the emission of unique lights, known as the aurora borealis.",
     title16: "Reenactment of memories",
     materials16: "Photography, paper frame 2021",
     dimentions16: "10 pieces",
@@ -86,6 +88,7 @@ const dictionaries = {
       "People who make others happy at the expense of their own comfort and well-being suffer from people pleaser syndrome. A lack of assertiveness and fear of rejection stem from low self-esteem, leading them to seek external validation of their worth. A bracelet lined with spikes, which always turns its sharp side toward the wearer, symbolizes the comfort that people pleasers seek—it is meant for those around them, not for themselves.",
   },
   "pl-PL": {
+    back: "Wstecz",
     title1: "Poza horyzontem",
     materials1: "Kappa, papier, szkiełko do spawania 2021",
     dimentions1: "10x10x10 cm, 5 obiektów",
@@ -156,7 +159,8 @@ const dictionaries = {
     title15: "Zorza polarna",
     materials15: "Aluminium 2023",
     dimentions15: "17x10x2 cm",
-    description15: "",
+    description15:
+      "Linearność nacięć symbolizuje fale wiatru słonecznego, które są emitowane przez Słońce i w swojej podróży przez kosmos zderzają się z atomami tlenu oraz azotu w atmosferze ziemskiej. To zjawisko przekształcenia energii w wyniku kolizji prowadzi do emisji osobliwych świateł, znanych jako zorza polarna.",
     title16: "Rekonstrukcja wspomnień",
     materials16: "Zdjęcia, papierowa ramka 2021",
     dimentions16: "10 obiektów",
