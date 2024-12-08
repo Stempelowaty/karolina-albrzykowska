@@ -14,7 +14,7 @@ export const DigitalGallery = () => {
           {firstCol?.map((src, index) => (
             <div key={`${src?.src}${index}`}>
               <PhotoProvider>
-                <PhotoView src={`/2d/1_${index + 1}.jpg`}>
+                <PhotoView src={`/2d/1_${index + 1}.png`}>
                   <Image
                     src={src}
                     alt={src?.src}
@@ -29,7 +29,7 @@ export const DigitalGallery = () => {
           {secondCol?.map((src, index) => (
             <div key={`${src?.src}${index}`}>
               <PhotoProvider>
-                <PhotoView src={`/2d/2_${index + 1}.jpg`}>
+                <PhotoView src={`/2d/2_${index + 1}.png`}>
                   <Image
                     src={src}
                     alt={src?.src}
@@ -44,7 +44,7 @@ export const DigitalGallery = () => {
           {thirdCol?.map((src, index) => (
             <div key={`${src?.src}${index}`}>
               <PhotoProvider>
-                <PhotoView src={`/2d/3_${index + 1}.jpg`}>
+                <PhotoView src={`/2d/3_${index + 1}.png`}>
                   <Image
                     src={src}
                     alt={src?.src}
