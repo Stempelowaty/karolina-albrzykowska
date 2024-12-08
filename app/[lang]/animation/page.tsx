@@ -1,6 +1,6 @@
 import { Top } from "@/app/_components/top";
 import { Navigation } from "@/app/_components/navigation";
-import { thumbnails, media } from "./utils";
+import { thumbnails } from "./utils";
 import Image from "next/image";
 import {
   Dialog,
