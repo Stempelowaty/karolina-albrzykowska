@@ -19,7 +19,7 @@ export const DigitalTabs = (props: DigitalTabsProps) => {
           >
             <p className="z-10 text-9xl pointer-events-none">2D</p>
             <Image
-              src={"/2d/3_3.jpg"}
+              src={"/2d/3_3.png"}
               alt={""}
               width={960}
               height={960}

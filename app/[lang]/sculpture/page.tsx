@@ -24,7 +24,7 @@ export default async function Sculpture({
               className="font-lexend w-full md:w-1/3 aspect-square p-4"
             >
               <div className="w-full h-full">
-                <Link href={`/${lang}/sculpture/${index + 1}`}>
+                <Link href={`/${lang}/sculpture/${index}`}>
                   <Image
                     src={item}
                     alt=""

@@ -3,6 +3,8 @@ import { type AvailableLocalesType } from "@/app/utils";
 const dictionaries = {
   "en-US": {
     back: "Back",
+    next: "Next",
+    previous: "Previous",
     title1: "Beyond the horizon",
     materials1: "Kappa, paper. Welding glass 2021",
     dimentions1: "10x10x10 cm, 5 pieces",
@@ -89,6 +91,8 @@ const dictionaries = {
   },
   "pl-PL": {
     back: "Wstecz",
+    next: "Następny",
+    previous: "Poprzedni",
     title1: "Poza horyzontem",
     materials1: "Kappa, papier, szkiełko do spawania 2021",
     dimentions1: "10x10x10 cm, 5 obiektów",
