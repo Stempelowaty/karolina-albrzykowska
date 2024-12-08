@@ -67,7 +67,7 @@ export const Details = (props: DetailsProps) => {
         `Loading...`
       )}
 
-      {count !== null ? (
+      {count !== null && (
         <div className="flex justify-center w-full md:hidden flex-wrap gap-2">
           <PhotoProvider>
             {Array.from({ length: count }).map((_, i) => (
@@ -84,8 +84,6 @@ export const Details = (props: DetailsProps) => {
             ))}
           </PhotoProvider>
         </div>
-      ) : (
-        `Loading...`
       )}
       <div className="flex flex-col w-full gap-3 p-6 font-lexend">
         <div className="text-extrabold text-xl">

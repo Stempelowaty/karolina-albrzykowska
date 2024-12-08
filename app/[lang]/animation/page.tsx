@@ -20,12 +20,12 @@ export default async function Animation({
     <div>
       <Top lang={lang} />
       <Navigation lang={lang} />
-      <div className="flex flex-wrap justify-center h-full w-full">
+      <div className="relative flex flex-wrap justify-center h-full w-full">
         {thumbnails?.map((item, index) => {
           return (
             <div
               key={index}
-              className="font-lexend w-full md:w-1/3 aspect-square p-4 m-4"
+              className="font-lexend w-full md:w-[30rem] aspect-square z-20 p-4"
             >
               <Dialog>
                 <DialogTrigger className="w-full h-full">
@@ -58,6 +58,9 @@ export default async function Animation({
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
+              {index == 2 && (
+                <div className="absolute w-full h-[60rem] mt-4 bg-stone-700 left-0 z-10" />
+              )}
             </div>
           );
         })}
