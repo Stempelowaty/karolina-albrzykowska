@@ -8,10 +8,10 @@ import {
 } from "@/app/_components/shadPopup";
 import { threeDimensionalArray } from "./utils";
 import { getDictionary } from "./dictionary";
-interface ThreeDimensionalsProps {
+interface RenderGalleryProps {
   lang: string;
 }
-export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
+export const RenderGallery = (props: RenderGalleryProps) => {
   const dict = getDictionary(props.lang);
   const getDialogContent = (index: number) => {
     switch (index) {
@@ -40,9 +40,9 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
           <DialogContent>
             <DialogHeader className="w-full h-full flex justify-center">
               <DialogTitle />
-              <div className="flex items-center justify-center">
-                <div className="w-1/2 flex flex-col h-full">
-                  <div className="p-2">
+              <div className="flex flex-col">
+                <div className="flex md:flex-row flex-col-reverse items-center">
+                  <div className="w-1/2 p-0 md:p-2">
                     <Image
                       src={"/3d/2_2.jpg"}
                       alt=""
@@ -51,7 +51,12 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                       className="rounded-lg"
                     />
                   </div>
-                  <div className="p-2">
+                  <div className="w-full md:w-1/2">
+                    <p>{dict.testing}</p>
+                  </div>
+                </div>
+                <div className="flex md:flex-row flex-col items-center">
+                  <div className="w-1/2 p-0 md:p-2">
                     <Image
                       src={"/3d/2_3.jpg"}
                       alt=""
@@ -60,10 +65,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                       className="rounded-lg"
                     />
                   </div>
-                </div>
-                <div className="w-1/2 flex flex-col h-full">
-                  <div className="h-1/2 p-2 font-lexend">{dict.testing}</div>
-                  <div className="p-2">
+                  <div className="w-1/2 p-0 md:p-2">
                     <Image
                       src={"/3d/2_1.jpg"}
                       alt=""
@@ -82,8 +84,9 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
           <DialogContent>
             <DialogHeader>
               <DialogTitle />
-              <div className="w-full h-full">
-                <div className="w-full h-3/5 flex ">
+              <div className="w-full h-full sm:flex sm:flex-col sm:justify-center">
+                <div className="md:hidden flex justify-center">{dict.ibex}</div>
+                <div className="w-full h-auto md:h-3/5 flex ">
                   <div className="w-1/3 h-full flex flex-col justify-end p-2">
                     <Image
                       src={"/3d/3_1.png"}
@@ -101,7 +104,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                       alt=""
                       className="rounded-lg"
                     />
-                    <div>{dict.ibex}</div>
+                    <div className="md:block hidden">{dict.ibex}</div>
                   </div>
                   <div className="w-1/3 h-full flex flex-col justify-end p-2">
                     <Image
@@ -113,8 +116,8 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                     />
                   </div>
                 </div>
-                <div className="w-full h-2/5 flex">
-                  <div className="w-1/4 h-full p-2">
+                <div className="w-full h-auto md:h-2/5 flex flex-wrap justify-center">
+                  <div className="w-1/3 sm:w-1/4 h-full p-2">
                     <Image
                       src={"/3d/3_5.png"}
                       width={650}
@@ -123,7 +126,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                       className="rounded-lg"
                     />
                   </div>
-                  <div className="w-1/4 h-full p-2">
+                  <div className="w-1/3 sm:w-1/4 h-full p-2">
                     <Image
                       src={"/3d/3_6.png"}
                       width={650}
@@ -132,7 +135,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                       className="rounded-lg"
                     />
                   </div>
-                  <div className="w-1/4 h-full p-2">
+                  <div className="w-1/2 sm:w-1/4 h-full p-2">
                     <Image
                       src={"/3d/3_7.png"}
                       width={650}
@@ -141,7 +144,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                       className="rounded-lg"
                     />
                   </div>
-                  <div className="w-1/4 h-full p-2">
+                  <div className="w-1/2 sm:w-1/4 h-full p-2">
                     <Image
                       src={"/3d/3_4.png"}
                       width={650}
@@ -180,9 +183,9 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
           <DialogContent>
             <DialogHeader className="w-full h-full flex justify-center">
               <DialogTitle />
-              <div className="flex items-center justify-center">
-                <div className="w-1/2 flex flex-col h-full">
-                  <div className="p-2">
+              <div className="flex flex-col">
+                <div className="flex md:flex-row flex-col-reverse items-center">
+                  <div className="w-2/3 p-0 md:p-2">
                     <Image
                       src={"/3d/5_2.jpg"}
                       alt=""
@@ -191,7 +194,12 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                       className="rounded-lg"
                     />
                   </div>
-                  <div className="p-2">
+                  <div className="w-2/3 p-0 md:p-2">
+                    <p>{dict.default}</p>
+                  </div>
+                </div>
+                <div className="flex md:flex-row flex-col items-center">
+                  <div className="w-2/3 p-0 md:p-2">
                     <Image
                       src={"/3d/5_3.jpg"}
                       alt=""
@@ -200,10 +208,7 @@ export const ThreeDimensional = (props: ThreeDimensionalsProps) => {
                       className="rounded-lg"
                     />
                   </div>
-                </div>
-                <div className="w-1/2 flex flex-col h-full">
-                  <div className="h-1/2 p-2 font-lexend">{dict.default}</div>
-                  <div className="p-2">
+                  <div className="w-2/3 p-0 md:p-2">
                     <Image
                       src={"/3d/5_1.jpg"}
                       alt=""

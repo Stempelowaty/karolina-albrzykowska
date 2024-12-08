@@ -3,7 +3,7 @@ import { firstCol, secondCol, thirdCol } from "./utils";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
-export const TwoDimensional = () => {
+export const DigitalGallery = () => {
   return (
     <div>
       <p className="w-full flex justify-end bg-foreground text-background uppercase text-6xl px-12">

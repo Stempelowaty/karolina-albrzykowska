@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { TwoDimensional } from "./twoDimensional";
-import { ThreeDimensional } from "./threeDimensional";
+import { DigitalGallery } from "./digitalGallery";
+import { RenderGallery } from "./renderGallery";
 interface DigitalTabsProps {
   lang: string;
 }
@@ -19,11 +19,11 @@ export const DigitalTabs = (props: DigitalTabsProps) => {
           >
             <p className="z-10 text-9xl pointer-events-none">2D</p>
             <Image
-              src={"/Test_Image.png"}
+              src={"/2d/3_3.jpg"}
               alt={""}
               width={960}
               height={960}
-              className="absolute w-full object-cover bg-fixed transition-opacity hover:opacity-20 duration-500 cursor-pointer rounded-lg"
+              className="absolute w-full object-cover bg-fixed transition-opacity hover:opacity-20 opacity-15 duration-500 cursor-pointer rounded-lg"
             />
           </div>
         </div>
@@ -34,17 +34,17 @@ export const DigitalTabs = (props: DigitalTabsProps) => {
           >
             <p className="z-10 text-9xl pointer-events-none">3D</p>
             <Image
-              src={"/Test_Image.png"}
+              src={"/3d/4.jpg"}
               alt={""}
               width={960}
               height={960}
-              className="absolute w-full object-cover bg-fixed transition-opacity hover:opacity-20 duration-500 cursor-pointer rounded-lg"
+              className="absolute w-full object-cover bg-fixed transition-opacity hover:opacity-20 opacity-15 duration-500 cursor-pointer rounded-lg"
             />
           </div>
         </div>
       </div>
-      {tab === "2d" && <TwoDimensional />}
-      {tab === "3d" && <ThreeDimensional lang={props.lang} />}
+      {tab === "2d" && <DigitalGallery />}
+      {tab === "3d" && <RenderGallery lang={props.lang} />}
     </div>
   );
 };

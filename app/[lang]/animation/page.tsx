@@ -44,7 +44,7 @@ export default async function Animation({
                         <video
                           controls
                           preload="none"
-                          className="rounded-lg max-h-[calc(95vh-3rem)] object-contain"
+                          className="rounded-lg h-[calc(95vh-3rem)] object-contain"
                           autoPlay
                           loop
                           muted

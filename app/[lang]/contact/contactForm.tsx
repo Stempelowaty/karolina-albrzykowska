@@ -93,7 +93,7 @@ export const ContactForm = (props: ContactFormProps) => {
         <button
           type="submit"
           disabled={!!status}
-          className="bg-blue-500 text-white px-4 py-2"
+          className="bg-foreground text-background px-4 py-2 rounded-lg hover:scale-105 transition duration-500"
         >
           {dict.send}
         </button>
