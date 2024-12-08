@@ -25,25 +25,3 @@ export const thumbnails = [
   thumbnail11,
   //   thumbnail12,
 ];
-
-import gif1 from "@/public/animation/1.gif";
-import gif2 from "@/public/animation/2.gif";
-import gif3 from "@/public/animation/3.gif";
-import gif8 from "@/public/animation/8.gif";
-import gif10 from "@/public/animation/10.gif";
-import gif11 from "@/public/animation/11.gif";
-
-export const media = [
-  gif1,
-  gif2,
-  gif3,
-  "video",
-  "video",
-  "video",
-  "video",
-  gif8,
-  "video",
-  gif10,
-  gif11,
-  "video",
-];

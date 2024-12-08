@@ -40,28 +40,20 @@ export default async function Animation({
                 <DialogContent>
                   <DialogHeader>
                     <DialogTitle className="flex items-center justify-center w-full h-full">
-                      {media[index] == "video" ? (
-                        <video
-                          controls
-                          preload="none"
-                          className="rounded-lg h-[calc(95vh-3rem)] object-contain"
-                          autoPlay
-                          loop
-                          muted
-                        >
-                          <source
-                            src={`/animation/${index + 1}.mp4`}
-                            type="video/mp4"
-                          />
-                          Your browser does not support the video tag.
-                        </video>
-                      ) : (
-                        <Image
-                          src={media[index]}
-                          alt=""
-                          className="rounded-lg max-h-[calc(95vh-3rem)] object-contain"
+                      <video
+                        controls
+                        preload="none"
+                        className="rounded-lg h-[calc(95vh-3rem)] object-contain"
+                        autoPlay
+                        loop
+                        muted
+                      >
+                        <source
+                          src={`/animation/${index + 1}.mp4`}
+                          type="video/mp4"
                         />
-                      )}
+                        Your browser does not support the video tag.
+                      </video>
                     </DialogTitle>
                   </DialogHeader>
                 </DialogContent>
