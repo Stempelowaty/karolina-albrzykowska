@@ -24,6 +24,10 @@ export default {
           "50%": { transform: "scale(1.25)" },
         },
       },
+      aspectRatio: {
+        "3/2": "3 / 2",
+        "3/8": "3 / 8",
+      },
     },
   },
   plugins: [],

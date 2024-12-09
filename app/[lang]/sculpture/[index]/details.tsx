@@ -68,7 +68,7 @@ export const Details = (props: DetailsProps) => {
       )}
 
       {count !== null && (
-        <div className="flex justify-center w-full md:hidden flex-wrap gap-2">
+        <div className="flex justify-center w-full md:hidden flex-wrap gap-3">
           <PhotoProvider>
             {Array.from({ length: count }).map((_, i) => (
               <div key={i} className="w-48 h-48 relative">
@@ -77,7 +77,7 @@ export const Details = (props: DetailsProps) => {
                     src={`/rzezba/${index + 1}_${i + 1}.jpg`}
                     alt={`Image ${i + 1}`}
                     fill
-                    className="rounded-lg object-cover"
+                    className="rounded-lg object-cover transition hover:scale-110 duration-500 cursor-pointer"
                   />
                 </PhotoView>
               </div>

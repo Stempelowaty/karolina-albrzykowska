@@ -6,12 +6,18 @@ const dictionaries = {
     testing:
       "Testing 3D scanning technology and performing a three-dimensional scan of an object. Then editing, transforming, and experimenting with modifiers in 3d Max.",
     ibex: "3D model of an ibex, ZBrush",
+    back: "Back",
+    next: "Next",
+    previous: "Previous",
   },
   "pl-PL": {
     default: "Render 3D, 3d Max",
     testing:
       "Testowanie technologii skanowania 3D, oraz wykonanie trójwymiarowego skanu obiektu. Następnie edytowanie, przekształcanie i eksperymentowanie z modyfikatorami w 3d Max.",
     ibex: "Model 3D koziorożca, ZBrush",
+    back: "Wstecz",
+    next: "Następny",
+    previous: "Poprzedni",
   },
 };
 

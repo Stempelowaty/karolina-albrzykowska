@@ -25,7 +25,7 @@ export default async function Animation({
           return (
             <div
               key={index}
-              className="font-lexend w-full md:w-[30rem] aspect-square z-20 p-4"
+              className="font-lexend w-2/3 md:w-1/3 mx-4 aspect-square p-4 z-20"
             >
               <Dialog>
                 <DialogTrigger className="w-full h-full">
@@ -58,8 +58,8 @@ export default async function Animation({
                   </DialogHeader>
                 </DialogContent>
               </Dialog>
-              {index == 2 && (
-                <div className="absolute w-full h-[60rem] mt-4 bg-stone-700 left-0 z-10" />
+              {index == 3 && (
+                <div className="absolute w-full aspect-3/8 md:aspect-3/2 mt-4 bg-stone-800 left-0 z-10" />
               )}
             </div>
           );
