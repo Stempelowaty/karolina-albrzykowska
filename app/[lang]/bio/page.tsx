@@ -17,7 +17,7 @@ export default async function Contact({
       <Top lang={lang} />
       <Navigation lang={lang} />
       <div className="flex flex-col p-12 font-lexend gap-3">
-        {Array.from({ length: 20 }).map((_, i) => (
+        {Array.from({ length: 21 }).map((_, i) => (
           <div key={i}>
             <div
               className={cn(
