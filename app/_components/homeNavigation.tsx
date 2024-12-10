@@ -17,9 +17,9 @@ export const HomeNavigation = (props: TopProps) => {
     <div className="flex items-center justify-center w-full md:w-1/3 aspect-square">
       <Link
         href={`/${lang}/${navLink}`}
-        className="w-11/12 aspect-square hover:scale-110 hover:bg-rose-600 transition duration-500 relative flex items-center justify-center rounded-lg"
+        className="w-11/12 aspect-square hover:scale-110 hover:bg-red-500 transition duration-500 relative flex items-center justify-center rounded-lg"
       >
-        <p className="text-5xl absolute">{label}</p>
+        <p className="text-5xl absolute font-lexend">{label}</p>
         <div className="relative transition-opacity w-full h-full hover:opacity-0 duration-500">
           <Image
             src={src}

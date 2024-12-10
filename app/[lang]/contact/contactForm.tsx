@@ -89,11 +89,11 @@ export const ContactForm = (props: ContactFormProps) => {
           className="w-full border px-3 py-2 bg-background rounded"
         />
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex md:flex-row flex-col items-center gap-2">
         <button
           type="submit"
           disabled={!!status}
-          className="bg-foreground text-background px-4 py-2 rounded-lg hover:scale-105 transition duration-500"
+          className="bg-red-500 text-background px-4 py-2 rounded-lg hover:scale-105 transition duration-500"
         >
           {dict.send}
         </button>

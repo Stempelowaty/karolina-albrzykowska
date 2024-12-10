@@ -21,7 +21,7 @@ export default async function Contact({
           <div key={i}>
             <div
               className={cn(
-                padding.includes(i) ? "pt-9 text-2xl" : "text-md",
+                padding.includes(i) ? "pt-9 text-2xl text-red-500" : "text-md",
                 bold.includes(i) ? "font-bold" : "font-normal"
               )}
             >

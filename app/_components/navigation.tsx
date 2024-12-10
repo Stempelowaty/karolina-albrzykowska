@@ -14,12 +14,17 @@ export const Navigation = (props: NavigationProps) => {
   const [isPortfolioOpen, setPortfolioOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 z-[40] flex justify-space-between text-background bg-foreground font-lexend text-lg">
-      <p className="w-full flex items-center uppercase px-4">
-        <Link aria-label="home" href={`/${lang}`}>
+    <div className="sticky top-0 z-[40] flex justify-space-between text-background bg-foreground font-lexend text-lg border-red-500 border-b-8">
+      <div className="w-full flex items-center uppercase px-4">
+        <Link
+          aria-label="home"
+          href={`/${lang}`}
+          className="transition duration-300 group"
+        >
           Karolina Albrzykowska
+          <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
         </Link>
-      </p>
+      </div>
       <nav className="flex flex-row items-center gap-4 px-4 w-full justify-end">
         <div
           className="relative"
@@ -36,7 +41,7 @@ export const Navigation = (props: NavigationProps) => {
             <div className="md:hidden block">
               <PaletteIcon className="h-5 w-5" />
             </div>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
           </div>
           {isPortfolioOpen && (
             <div className="absolute right-0 top-full w-48 bg-foreground text-background rounded-sm shadow-lg flex flex-col">
@@ -47,7 +52,7 @@ export const Navigation = (props: NavigationProps) => {
                   )}
                 >
                   {dict.digital}
-                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
                 </p>
               </Link>
               <Link aria-label="home" href={`/${lang}/photos`}>
@@ -57,7 +62,7 @@ export const Navigation = (props: NavigationProps) => {
                   )}
                 >
                   {dict.photography}
-                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
                 </p>
               </Link>
               <Link aria-label="home" href={`/${lang}/drawing`}>
@@ -67,7 +72,7 @@ export const Navigation = (props: NavigationProps) => {
                   )}
                 >
                   {dict.drawing}
-                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
                 </p>
               </Link>
               <Link aria-label="home" href={`/${lang}/animation`}>
@@ -77,7 +82,7 @@ export const Navigation = (props: NavigationProps) => {
                   )}
                 >
                   {dict.animation}
-                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
                 </p>
               </Link>
               <Link aria-label="home" href={`/${lang}/sculpture`}>
@@ -87,7 +92,7 @@ export const Navigation = (props: NavigationProps) => {
                   )}
                 >
                   {dict.sculpture}
-                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
                 </p>
               </Link>
             </div>
@@ -103,7 +108,7 @@ export const Navigation = (props: NavigationProps) => {
             <div className="md:hidden block">
               <BookOpenIcon className="h-5 w-5" />
             </div>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
           </div>
         </Link>
         <Link aria-label="contact" href={`/${lang}/contact`}>
@@ -116,7 +121,7 @@ export const Navigation = (props: NavigationProps) => {
             <div className="md:hidden block">
               <PhoneIcon className="h-5 w-5" />
             </div>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-background" />
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
           </div>
         </Link>
       </nav>

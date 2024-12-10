@@ -22,7 +22,7 @@ export default async function SculptureDetails({
           href={`/${lang}/sculpture`}
           className="font-lexend cursor-pointer text-xl"
         >
-          <div className="flex items-center pt-2 px-4 hover:scale-110 transition duration-500">
+          <div className="flex items-center pt-2 px-4 hover:scale-110 transition duration-500 text-red-500">
             <ArrowLeftIcon className="w-4 h-4" />
             <div>{dict.back}</div>
           </div>
@@ -37,7 +37,7 @@ export default async function SculptureDetails({
             }`}
             className="font-lexend cursor-pointer text-xl"
           >
-            <div className="flex items-center pb-2 px-4 hover:scale-110 transition duration-500">
+            <div className="flex items-center pb-2 px-4 hover:scale-110 transition duration-500 text-red-500">
               <ArrowLeftIcon className="w-4 h-4" />
               <div>{dict.previous}</div>
             </div>
@@ -50,7 +50,7 @@ export default async function SculptureDetails({
             }`}
             className="font-lexend cursor-pointer text-xl"
           >
-            <div className="flex items-center pb-2 px-4 hover:scale-110 transition duration-500 justify-end">
+            <div className="flex items-center pb-2 px-4 hover:scale-110 transition duration-500 justify-end text-red-500">
               <div>{dict.next}</div>
               <ArrowRightIcon className="w-4 h-4" />
             </div>

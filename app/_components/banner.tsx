@@ -3,14 +3,22 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 export const Banner = () => {
-  const slides = ["/banner.jpg", "/banner.jpg", "/banner.jpg", "/banner.jpg"];
+  const slides = [
+    "/banners/banner.jpg",
+    "/banners/baner2.jpg",
+    "/banners/baner3.jpg",
+    "/banners/baner4.jpg",
+    "/banners/baner5.jpg",
+    "/banners/baner6.jpg",
+    "/banners/baner7.jpg",
+  ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [slides.length]);
@@ -38,8 +46,8 @@ export const Banner = () => {
         {slides.map((_, index) => (
           <button
             key={index}
-            className={`w-3 h-3 rounded-full hover:scale-125 transition duration-500 ${
-              index === currentSlide ? "bg-white" : "bg-gray-400"
+            className={`w-3 h-3 rounded-full hover:scale-125 transition duration-500 border-gray-600 border ${
+              index === currentSlide ? "bg-red-500" : "bg-gray-400"
             }`}
             onClick={() => setCurrentSlide(index)}
           />

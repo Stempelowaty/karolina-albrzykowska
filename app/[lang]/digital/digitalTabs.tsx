@@ -14,7 +14,7 @@ export const DigitalTabs = (props: DigitalTabsProps) => {
       <div className="flex justify-center">
         <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
           <div
-            className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 hover:bg-rose-600 flex justify-center items-center rounded-lg"
+            className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 hover:bg-red-500 flex justify-center items-center rounded-lg"
             onClick={() => setTab("2d")}
           >
             <p className="z-10 text-9xl pointer-events-none">2D</p>
@@ -29,7 +29,7 @@ export const DigitalTabs = (props: DigitalTabsProps) => {
         </div>
         <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
           <div
-            className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 hover:bg-rose-600 flex justify-center items-center rounded-lg"
+            className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 hover:bg-red-500 flex justify-center items-center rounded-lg"
             onClick={() => setTab("3d")}
           >
             <p className="z-10 text-9xl pointer-events-none">3D</p>
