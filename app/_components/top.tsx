@@ -1,6 +1,7 @@
 "use client";
 import { LanguagesIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { redirect, usePathname } from "next/navigation";
 
 interface TopProps {
@@ -11,8 +12,11 @@ export const Top = (props: TopProps) => {
   const { lang } = props;
   const pathname = usePathname();
   return (
-    <div className="relative w-full bg-foreground text-background font-lexend flex flex-col items-center py-12 pb-4 md:pb-20">
-      <div className="flex flex-col items-center text-foreground w-36 h-24 justify-center rounded-xl">
+    <div className="relative w-full bg-foreground text-background font-lexend flex flex-col items-center py-12 pb-4">
+      <Link
+        href={`/${lang}`}
+        className="flex flex-col items-center text-foreground w-36 h-24 justify-center rounded-xl"
+      >
         <Image
           src={"/logo.svg"}
           alt={""}
@@ -20,7 +24,7 @@ export const Top = (props: TopProps) => {
           height={300}
           className="w-full h-64 object-cover bg-fixed"
         />
-      </div>
+      </Link>
       <button
         className="absolute top-5 right-5 flex items-center hover:scale-110 duration-500 transition"
         onClick={() => {
@@ -29,7 +33,7 @@ export const Top = (props: TopProps) => {
         }}
       >
         <LanguagesIcon className="w-5 h-5" />
-        {props.lang === "pl-PL" ? "EN" : "PL"}
+        {props.lang === "pl-PL" ? "PL" : "EN"}
       </button>
     </div>
   );

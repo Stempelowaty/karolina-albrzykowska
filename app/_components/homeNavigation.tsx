@@ -17,20 +17,22 @@ export const HomeNavigation = (props: TopProps) => {
     <div className="flex items-center justify-center w-full md:w-1/3 aspect-square">
       <Link
         href={`/${lang}/${navLink}`}
-        className="w-11/12 aspect-square hover:scale-110 hover:bg-red-500 transition duration-500 relative flex items-center justify-center rounded-lg"
+        className="w-11/12 aspect-square hover:scale-110 hover:bg-stone-800 transition duration-500 relative flex items-center justify-center rounded-lg"
       >
         <p className="text-5xl absolute font-lexend">{label}</p>
-        <div className="relative transition-opacity w-full h-full hover:opacity-0 duration-500">
+        <div className="relative transition-opacity w-full h-full hover:opacity-50 hover:blur-md duration-500">
           <Image
             src={src}
             alt=""
             className="w-full object-cover w-full h-full bg-fixed absolute rounded-lg"
           />
-          <Image
-            src={lang == "pl-PL" ? labelImagePl : labelImageEn}
-            alt=""
-            className="object-cover w-3/4 bg-fixed absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          />
+          <div className="absolute w-full h-full hover:opacity-0 flex items-center justify-center transform ">
+            <Image
+              src={lang == "pl-PL" ? labelImagePl : labelImageEn}
+              alt=""
+              className="object-cover w-3/4 bg-fixed"
+            />
+          </div>
         </div>
       </Link>
     </div>

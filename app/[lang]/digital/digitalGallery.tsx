@@ -6,7 +6,7 @@ import "react-photo-view/dist/react-photo-view.css";
 export const DigitalGallery = () => {
   return (
     <div>
-      <p className="w-full flex justify-end bg-foreground text-background uppercase text-6xl px-12">
+      <p className="w-full flex justify-start bg-foreground text-background uppercase text-6xl px-12">
         2d
       </p>
       <div className="grid mt-12 gap-4 grid-cols-1 sm:grid-cols-3 p-4">

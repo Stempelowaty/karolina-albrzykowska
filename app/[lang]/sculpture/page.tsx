@@ -16,12 +16,12 @@ export default async function Sculpture({
       <Top lang={lang} />
       <Navigation lang={lang} />
 
-      <div className="flex relative flex-wrap justify-center">
+      <div className="flex relative flex-wrap justify-center pt-6">
         {thumbnails?.map((item, index) => {
           return (
             <div
               key={index}
-              className="font-lexend w-2/3 md:w-1/3 mx-4 aspect-square p-4 z-20"
+              className="font-lexend w-2/3 md:w-1/3 m-4 aspect-square p-4 z-20"
             >
               <div className="w-full h-full">
                 <Link href={`/${lang}/sculpture/${index}`}>

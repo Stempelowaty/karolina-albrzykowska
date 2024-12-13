@@ -20,12 +20,12 @@ export default async function Animation({
     <div>
       <Top lang={lang} />
       <Navigation lang={lang} />
-      <div className="relative flex flex-wrap justify-center h-full w-full">
+      <div className="relative flex flex-wrap justify-center h-full w-full pt-6">
         {thumbnails?.map((item, index) => {
           return (
             <div
               key={index}
-              className="font-lexend w-2/3 md:w-1/3 mx-4 aspect-square p-4 z-20"
+              className="font-lexend w-2/3 md:w-1/3 m-4 aspect-square p-4 z-20"
             >
               <Dialog>
                 <DialogTrigger className="w-full h-full">

@@ -9,15 +9,15 @@ export const RenderGallery = (props: RenderGalleryProps) => {
 
   return (
     <div className="flex flex-col items-center">
-      <p className="w-full flex justify-end bg-foreground text-background uppercase text-6xl px-12">
+      <p className="w-full flex justify-end bg-foreground text-background uppercase text-6xl px-12 mb-8">
         3d
       </p>
-      <div className="flex flex-wrap justify-center gap-4 w-3/4">
+      <div className="flex flex-wrap justify-center gap-4">
         {threeDimensionalArray?.map((item, index) => {
           return (
             <div
               key={index}
-              className="font-lexend w-full md:w-1/3 aspect-square p-4"
+              className="font-lexend w-full md:w-1/3 aspect-square m-4 p-4"
             >
               <Link
                 href={`/${lang}/digital/${index}`}

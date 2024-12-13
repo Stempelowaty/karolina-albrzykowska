@@ -11,7 +11,7 @@ export const DigitalTabs = (props: DigitalTabsProps) => {
 
   return (
     <div className="font-lexend flex flex-col">
-      <div className="flex justify-center">
+      <div className="flex justify-center py-10 gap-10">
         <div className="w-full md:w-1/3 aspect-square flex items-center justify-center">
           <div
             className="relative w-11/12 aspect-square hover:scale-105 transition duration-500 hover:bg-red-500 flex justify-center items-center rounded-lg"

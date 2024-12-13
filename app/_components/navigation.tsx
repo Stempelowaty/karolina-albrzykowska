@@ -34,7 +34,7 @@ export const Navigation = (props: NavigationProps) => {
         >
           <div
             className={cn(
-              "rounded-lg p-2 uppercase transition duration-300 group"
+              "rounded-lg p-2 uppercase transition duration-300 group cursor-default"
             )}
           >
             <p className="hidden md:block">{dict.portfolio}</p>
@@ -45,6 +45,16 @@ export const Navigation = (props: NavigationProps) => {
           </div>
           {isPortfolioOpen && (
             <div className="absolute right-0 top-full w-48 bg-foreground text-background rounded-sm shadow-lg flex flex-col">
+              <Link aria-label="home" href={`/${lang}/animation`}>
+                <p
+                  className={cn(
+                    "rounded-lg p-2 uppercase transition duration-300 group"
+                  )}
+                >
+                  {dict.animation}
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
+                </p>
+              </Link>
               <Link aria-label="home" href={`/${lang}/digital`}>
                 <p
                   className={cn(
@@ -72,16 +82,6 @@ export const Navigation = (props: NavigationProps) => {
                   )}
                 >
                   {dict.drawing}
-                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
-                </p>
-              </Link>
-              <Link aria-label="home" href={`/${lang}/animation`}>
-                <p
-                  className={cn(
-                    "rounded-lg p-2 uppercase transition duration-300 group"
-                  )}
-                >
-                  {dict.animation}
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-red-500" />
                 </p>
               </Link>
