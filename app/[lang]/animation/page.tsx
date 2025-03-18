@@ -20,8 +20,8 @@ export default async function Animation({
     <div>
       <Top lang={lang} />
       <Navigation lang={lang} />
-      <div className="relative flex flex-wrap justify-center h-full w-full pt-6">
-        {thumbnails?.map((item, index) => {
+      <div className="relative flex flex flex-wrap justify-center h-full w-full pt-6">
+        {thumbnails?.toReversed().map((item, index) => {
           return (
             <div
               key={index}
@@ -49,7 +49,7 @@ export default async function Animation({
                         muted
                       >
                         <source
-                          src={`/animation/${index + 1}.mp4`}
+                          src={`/animation/${thumbnails.length - index}.mp4`}
                           type="video/mp4"
                         />
                         Your browser does not support the video tag.

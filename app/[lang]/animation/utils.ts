@@ -9,6 +9,7 @@ import thumbnail8 from "@/public/animation/thumbnail/8.jpg";
 import thumbnail9 from "@/public/animation/thumbnail/9.jpg";
 import thumbnail10 from "@/public/animation/thumbnail/10.jpg";
 import thumbnail11 from "@/public/animation/thumbnail/11.jpg";
+import thumbnail12 from "@/public/animation/thumbnail/12.jpg";
 
 export const thumbnails = [
   thumbnail1,
@@ -22,4 +23,5 @@ export const thumbnails = [
   thumbnail9,
   thumbnail10,
   thumbnail11,
+  thumbnail12,
 ];
