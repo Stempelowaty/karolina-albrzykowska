@@ -10,6 +10,9 @@ const dictionaries = {
     portfolio: "Portfolio",
     contact: "Contact",
     bio: "Bio",
+    newsTitle: "My latest work...",
+    newsLabel: "Animation for Skill & Chill",
+    newsLink: "Check it out!",
   },
   "pl-PL": {
     photography: "Fotografia",
@@ -20,6 +23,9 @@ const dictionaries = {
     portfolio: "Portfolio",
     contact: "Kontakt",
     bio: "Bio",
+    newsTitle: "Moja najnowsza praca...",
+    newsLabel: "Animacja dla firmy Skill & Chill",
+    newsLink: "Sprawdź!",
   },
 };
 
