@@ -1,6 +1,6 @@
 import { Top } from "@/app/_components/top";
 import { Navigation } from "@/app/_components/navigation";
-import { thumbnails } from "./utils";
+import { thumbnails, videoSrcs } from "./utils";
 import Image from "next/image";
 import {
   Dialog,
@@ -9,6 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/app/_components/shadPopup";
+import CloudinaryVideo from "@/app/_components/cloudinaryVideo";
 
 export default async function Animation({
   params,
@@ -16,6 +17,7 @@ export default async function Animation({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
+  
   return (
     <div>
       <Top lang={lang} />
@@ -32,6 +34,8 @@ export default async function Animation({
                   <div className="w-full h-full">
                     <Image
                       src={item}
+                      width={500}
+                      height={500}
                       alt=""
                       className="rounded-lg hover:scale-105 transition duration-500 w-full aspect-square"
                     />
@@ -40,20 +44,7 @@ export default async function Animation({
                 <DialogContent>
                   <DialogHeader>
                     <DialogTitle className="flex items-center justify-center w-full h-full">
-                      <video
-                        controls
-                        preload="none"
-                        className="rounded-lg h-[calc(95vh-3rem)] object-contain"
-                        autoPlay
-                        loop
-                        muted
-                      >
-                        <source
-                          src={`/animation/${thumbnails.length - index}.mp4`}
-                          type="video/mp4"
-                        />
-                        Your browser does not support the video tag.
-                      </video>
+                      <CloudinaryVideo src={videoSrcs[`${videoSrcs.length - index -1}`]} />
                     </DialogTitle>
                   </DialogHeader>
                 </DialogContent>
