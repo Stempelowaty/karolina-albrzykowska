@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export const Banner = () => {
   const slides = [
-    "/banners/banner.jpg",
-    "/banners/baner2.jpg",
-    "/banners/baner3.jpg",
-    "/banners/baner4.jpg",
-    "/banners/baner5.jpg",
-    "/banners/baner6.jpg",
-    "/banners/baner7.jpg",
+    "https://res.cloudinary.com/dvq0rydw8/image/upload/v1755711627/banner1_rgwghv.jpg",
+    "https://res.cloudinary.com/dvq0rydw8/image/upload/v1755711625/baner2_o0j3m8.jpg",
+    "https://res.cloudinary.com/dvq0rydw8/image/upload/v1755711622/baner3_bdsbba.jpg",
+    "https://res.cloudinary.com/dvq0rydw8/image/upload/v1755711624/baner4_d8hujb.jpg",
+    "https://res.cloudinary.com/dvq0rydw8/image/upload/v1755711576/baner5_i21m7o.jpg",
+    "https://res.cloudinary.com/dvq0rydw8/image/upload/v1755711627/baner6_lnnj4q.jpg",
+    "https://res.cloudinary.com/dvq0rydw8/image/upload/v1755711624/baner7_fqclza.jpg",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

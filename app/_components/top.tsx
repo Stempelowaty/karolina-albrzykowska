@@ -22,7 +22,7 @@ export const Top = (props: TopProps) => {
           alt={""}
           width={300}
           height={300}
-          className="w-full h-64 object-cover bg-fixed"
+          className="w-full h-64 object-cover bg-fixed hover:scale-105 transition duration-500"
         />
       </Link>
       <button
