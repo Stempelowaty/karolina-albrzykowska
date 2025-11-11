@@ -78,7 +78,7 @@ const dictionaries = {
     dimentions15: "17x10x2 cm",
     description15:
       "The linearity of the cuts symbolizes the waves of solar wind emitted by the Sun, which, during their journey through space, collide with oxygen and nitrogen atoms in Earth's atmosphere. This phenomenon of energy transformation through collision results in the emission of unique lights, known as the aurora borealis.",
-    title16: "Reenactment of memories",
+    title16: "Confabulation",
     materials16: "Photography, paper frame 2021",
     dimentions16: "10 pieces",
     description16:
@@ -165,7 +165,7 @@ const dictionaries = {
     dimentions15: "17x10x2 cm",
     description15:
       "Linearność nacięć symbolizuje fale wiatru słonecznego, które są emitowane przez Słońce i w swojej podróży przez kosmos zderzają się z atomami tlenu oraz azotu w atmosferze ziemskiej. To zjawisko przekształcenia energii w wyniku kolizji prowadzi do emisji osobliwych świateł, znanych jako zorza polarna.",
-    title16: "Rekonstrukcja wspomnień",
+    title16: "Konfabulacja",
     materials16: "Zdjęcia, papierowa ramka 2021",
     dimentions16: "10 obiektów",
     description16:
