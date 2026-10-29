@@ -22,7 +22,7 @@ import { Top } from "../_components/top";
 import { getDictionary } from "./dictionary";
 import { Banner } from "../_components/banner";
 import { HomeNavigation } from "../_components/homeNavigation";
-import { News } from "../_components/news";
+// import { News } from "../_components/news";
 
 export default async function Home({
   params,
