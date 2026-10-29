@@ -38,7 +38,7 @@ export default async function Home({
       <Navigation lang={lang} />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Banner />
-        <News lang={lang} />
+        {/* <News lang={lang} /> */}
         <div className="flex w-full flex-wrap justify-center">
           <HomeNavigation
             navLink={"animation"}
